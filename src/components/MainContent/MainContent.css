@@ -1,0 +1,14 @@
+.main-container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
