@@ -15,9 +15,6 @@ function App() {
       <div className='app-footer-container'>
       <Footer />
       </div>
-        
-
-
     </div>
     
   );

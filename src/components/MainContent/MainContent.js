@@ -9,7 +9,7 @@ export default function MainContent() {
     return (
         <main className='main-container'>
              
-             <Title />
+             <Title name='Steven'/>
             <CenterContainer />
             
             
