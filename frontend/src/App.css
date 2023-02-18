@@ -1,0 +1,215 @@
+@media screen and (max-width: 960px) {
+    header ul { display: none;}
+    header select { display: inline-block;}
+  }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  html,body
+  {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden; 
+      background-image: url('/src/img/background.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: soft-light;
+  } 
+  
+  body {
+    
+    background-color: darkolivegreen;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 100%;
+    
+  }
+  
+  .app-footer-container {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    text-align: center;
+    bottom: 0;
+    
+  }
+  .App {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* HEADER CSS */
+
+  .header-container {
+    background-color: rgb(207, 212, 214);
+    display: flex;
+    margin:auto;
+    height: 70px;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    
+}
+
+.nav-bar {
+    margin-right: 10px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+header select {
+    display: none;
+}
+
+.nav-bar li {
+    list-style: none;
+}
+
+.nav-bar a {
+    margin: 20px;
+    font-size: larger;
+    color: darkolivegreen;
+}
+
+.nav-bar a:hover {
+    color: darkorange;
+    text-decoration: none;
+}
+
+.nav-bar a:active {
+    color: darkred
+}
+
+/* MainContainer css */
+.main-container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.center-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+.title {
+    margin-top: 70px;
+    padding: 10px;
+    margin-bottom: 0px;
+    color: rgb(207, 212, 214);
+    width: 100%;
+}
+.facts-container {
+    color: rgb(207, 212, 214);
+    width: 40%;
+    height: 100%;
+    overflow-y: scroll;
+    padding: .88rem;
+    background-color: rgba(1, 12, 63, 0.7);
+    box-shadow: 0 4px 2px 2px #000000;
+    background-color: rgba(48, 138, 43, 0.7);
+    margin: 15px;
+    min-height: 400px;
+}
+
+.facts-container > ul {
+    text-align: left;
+}
+
+.facts-container > ul > li {
+    padding-left: 10px;
+}
+.schedule-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    overflow-y: scroll;
+    padding: .88rem;
+    background-color: rgba(48, 138, 43, 0.7);
+    box-shadow: 0 4px 2px 2px #000000;
+    color: rgb(207, 212, 214);
+    margin: 15px;
+    min-height: 400px;
+}
+
+.schedule-container h1 {
+    font-weight: bold;
+    
+}
+.footer-container {
+    color: rgb(207, 212, 214);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 2.5rem;
+}
+
+.title-tilt {
+    font-style: italic;
+}
