@@ -6,24 +6,26 @@ export default function HikingFacts() {
     const [parks, setParks] = React.useState([]);
 
     React.useEffect(() => {
-        // fetch data
+        //fetch data
         const dataFetch = async () => {
           const data = await (
             await fetch(
               "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Parks_Points/FeatureServer/0/query?where=1%3D1&outFields=PARK_NAME,TSP_UID,AM_FIRST_NAME,AM_LAST_NAME,AM_TITLE,AM_PHONE,PM_FIRST_NAME,PM_LAST_NAME,PM_TITLE,PM_PHONE&outSR=4326&f=json"
             )
           ).json();
-    
+            
           // set state when the data received
           setParks(data);
         };
     
-        dataFetch();
+         dataFetch();
       }, []);
+      
+      
       const parksArray = parks.features.map(park => {
-        const parkName = park.attributes['PARK_NAME']
+        const parkName = park.attributes['PARK_NAME'];
         return <p>{parkName}</p>
-      })
+      });
       
     return (
         <div className="facts-container">
