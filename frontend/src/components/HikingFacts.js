@@ -27,7 +27,7 @@ export default function HikingFacts() {
             </ul>
             <p>Parks:</p>
             <div className="park-list-container">
-            {parks && parks.map(park => {return (<a href={`https://tnstateparks.com/parks/${park.attributes.PARK_NAME.replace(/\s+/g, '-').toLowerCase().replace('-state-park', '')}`} target='_blank'><p className='park-list'>{park.attributes.PARK_NAME}</p></a>)})}
+            {parks && parks.map(park => {return (<a href={`https://tnstateparks.com/parks/${park.attributes.PARK_NAME.replace(/\s+/g, '-').toLowerCase().replace('-state-park', '')}`} target='_blank' rel="noreferrer"><p className='park-list'>{park.attributes.PARK_NAME}</p></a>)})}
             </div>
            
         </div>
